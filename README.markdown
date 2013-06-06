@@ -1,3 +1,0 @@
-# puppet-motd #
-
-This is the motd module. It provides...
