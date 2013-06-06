@@ -12,12 +12,15 @@
 #  include motd
 #
 # [Remember: No empty lines between comments and class definition]
-class motd {
+class motd (
+  $template_suffix = $motd::params::template_suffix,
+) inherits motd::params
+  {
   if $kernel == "Linux" {
     file { '/etc/motd':
       ensure  => file,
       backup  => false,
-      source => "puppet:///modules/motd/motd.DICE",
+      source => "puppet:///modules/motd/motd.${$template_suffix}",
     }
   }
 }
