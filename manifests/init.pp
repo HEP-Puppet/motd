@@ -20,7 +20,7 @@ class motd (
     file { '/etc/motd':
       ensure  => file,
       backup  => false,
-      content => template('motd/motd_${$template_suffix}.erb'),
+      content => template("motd/motd_${template_suffix}.erb"),
     }
   }
 }
