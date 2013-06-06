@@ -1,5 +1,5 @@
 name    'hep-puppet-motd'
-version '0.1'
+version '0.1.1'
 source 'git@github.com:HEP-Puppet/motd.git'
 author 'kreczko'
 license 'Apache License, Version 2.0'

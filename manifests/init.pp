@@ -20,7 +20,7 @@ class motd (
     file { '/etc/motd':
       ensure  => file,
       backup  => false,
-      source => "puppet:///modules/motd/motd.${$template_suffix}",
+      content => template('motd/motd_${$template_suffix}.erb'),
     }
   }
 }
