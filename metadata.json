@@ -1,0 +1,22 @@
+{
+  "name": "hep-puppet-motd",
+  "author": "kreczko",
+  "description": "This module simply manages /etc/motd as a template, showing interpolation of system attributes",
+  "license": "Apache License, Version 2.0",
+  "project_page": "https://github.com/HEP-Puppet/motd",
+  "source": "git@github.com:HEP-Puppet/motd.git",
+  "summary": "A simple module to demonstrate managing /etc/motd as a template",
+  "version": "0.1",
+  "checksums": {
+    "Modulefile": "d5572cff4cb0db49112387cc5be257cc",
+    "README.markdown": "74d4b86de5892f5a030ab15f3567ff1e",
+    "README.md": "46989f8cca8a3be79c1a206e395b34a4",
+    "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
+    "files/motd.DICE": "e04f1b68852eb8ed1a2420591e9262ff",
+    "manifests/init.pp": "c30e97c2ae6b48a5553e058e05c0d057",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    "tests/init.pp": "5086992bfbe4109aef08a6dc91736250"
+  },
+  "dependencies": []
+}
