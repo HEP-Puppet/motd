@@ -1,3 +1,3 @@
 class motd::params{
-  $template_suffix = "DICE"
+  $template = "motd/motd_default.erb"
 }

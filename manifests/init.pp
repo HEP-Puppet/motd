@@ -13,14 +13,14 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class motd (
-  $template_suffix = $motd::params::template_suffix,
+  $template = $motd::params::template,
 ) inherits motd::params
   {
   if $kernel == "Linux" {
     file { '/etc/motd':
       ensure  => file,
       backup  => false,
-      content => template("motd/motd_${template_suffix}.erb"),
+      content => template($template),
     }
   }
 }
