@@ -13,14 +13,7 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class motd (
-  $template = $motd::params::template,
-) inherits motd::params
-  {
-  if $kernel == "Linux" {
-    file { '/etc/motd':
-      ensure  => file,
-      backup  => false,
-      content => template($template),
-    }
-  }
+$default_template = $motd::params::default_template
+) inherits motd::params{
+
 }

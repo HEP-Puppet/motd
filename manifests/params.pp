@@ -1,3 +1,3 @@
 class motd::params{
-  $template = "motd/motd_default.erb"
+  $default_template = "motd/motd_default.erb"
 }
