@@ -1,6 +1,5 @@
 name 'kreczko-motd'
 version '0.1.4'
-
 author 'kreczko'
 license 'Apache License, Version 2.0'
 project_page 'https://github.com/HEP-Puppet/motd'

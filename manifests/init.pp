@@ -13,7 +13,6 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class motd (
-$default_template = $motd::params::default_template
-) inherits motd::params{
+  $default_template = $motd::params::default_template) inherits motd::params {
 
 }
